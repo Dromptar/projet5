@@ -102,7 +102,7 @@ ul, ol {
 .set-bg {
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: top center;
+	background-position: center;
 }
 .spad {
 	padding-top: 100px;
@@ -291,7 +291,7 @@ ul, ol {
 -----------------------*/
 
 .hero-section {
-	height: 880px;
+	height: 100vh;
 	padding-top: 335px;
 }
 .hero-text span {
@@ -302,7 +302,7 @@ ul, ol {
 	font-weight: 600;
 }
 .hero-text h1 {
-	font-size: 72px;
+	font-size: 50px;
 	color: #ffffff;
 	font-weight: 600;
 	margin-top: 11px;
@@ -778,8 +778,8 @@ ul, ol {
 .register-section.classes-page {
 	background: #ffffff;
 	padding-top: 100px;
+	padding-bottom: 100px;
 	margin-top: 0;
-	padding-bottom: 0;
 }
 .register-section.classes-page .classes-page-text {
 	-webkit-box-shadow: 0px 12px 21px rgba(0, 0, 0, 0.15);
@@ -1190,7 +1190,7 @@ ul, ol {
 	margin-right: 0;
 }
 .about-counter-text .single-counter h1 {
-	font-size: 72px;
+	font-size: 35px;
 	color: #ffffff;
 	display: inline-block;
 }
@@ -1514,6 +1514,7 @@ ul, ol {
 .map {
 	height: 612px;
 	position: relative;
+	padding-top: 100px;
 }
 .map iframe {
 	width: 100%;
