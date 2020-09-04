@@ -2,6 +2,7 @@
 
 class Home extends BaseController
 {
+
 	public function index()
 	{
 		return view('index');
@@ -14,7 +15,8 @@ class Home extends BaseController
 
 	public function blog()
 	{
-		return view('blog');
+		var_dump('bonjour');
+		/**return view('blog');*/
 	}
 
 	public function tips()

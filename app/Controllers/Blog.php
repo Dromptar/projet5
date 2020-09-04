@@ -7,13 +7,11 @@ class Blog extends BaseController
 
 		$posts = 'Bonjour';
 	
-
 	}
 
-	public function post(){
-
+	public function post()
+	{
 		return view('single_post');
 	}
 
-	
 }
