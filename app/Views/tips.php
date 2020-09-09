@@ -56,7 +56,7 @@
                     </div>
                     <div class="col-lg-4">
                         <div class="register-pic">
-                            <img src="assets/img/parana/team.jpeg" alt="">
+                            <img src="assets/img/parana/team2.jpeg" alt="">
                         </div>
                     </div>
                 </div>

@@ -35,12 +35,13 @@ $routes->setAutoRoute(true);
 //paths for the menu
 $routes->add('about', 'Home::about');
 $routes->add('tips', 'Home::tips');
-$routes->add('blog', 'Home::blog');
+$routes->add('blog', 'Blog::index');
 $routes->add('gallery', 'Home::gallery');
 $routes->add('contact', 'Home::contact');
 
 //paths for the blog
 $routes->add('post', 'Blog::post');
+$routes->add('newPost', 'Blog::newPost');
 
 
 //paths for the logs

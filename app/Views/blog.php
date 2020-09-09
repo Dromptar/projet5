@@ -20,13 +20,18 @@
     </section>
     <!-- Breadcrumb Section End -->
 
+
     <!-- Blog Section Begin -->
     <section class="blog-section spad">
         <div class="container">
             <div class="row">
-            
-            <p><?php echo $posts ?></p>
-                
+            <?php foreach($posts as $post) : ?>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-blog-item">
+                        <?= view_cell('\App\Libraries\Blog::postItem', ['title' => $post]); ?>   
+                    </div>
+                </div>
+             <?php endforeach; ?>
             </div>
         </div>
     </section>

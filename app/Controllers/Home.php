@@ -13,11 +13,6 @@ class Home extends BaseController
 		return view('about');
 	}
 
-	public function blog()
-	{
-		var_dump('bonjour');
-		/**return view('blog');*/
-	}
 
 	public function tips()
 	{
