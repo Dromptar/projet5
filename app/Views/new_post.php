@@ -29,15 +29,19 @@
                             <div class="section-title">
                                 <h2>Create a new post !</h2>
                             </div>
-                            <form action="post" class="register-form" action="/blog/newPost">
+                            <form method="POST" class="register-form" action="newPost">
                                 <div class="row">
+                                <div class="col-lg-6">
+                                        <label for="name">Autor</label>
+                                        <input type="text" id="name" name="author">
+                                    </div>
                                     <div class="col-lg-6">
-                                        <label for="name">Title</label>
+                                        <label for="name">Titulo</label>
                                         <input type="text" id="name" name="title">
                                     </div>
                                     <div class="col-lg-6">
-                                        <label for="email">Content</label>
-                                        <textarea id="" name="content"></textarea>
+                                        <label for="name">Contenido</label>
+                                        <textarea id="texteditor" name="content"></textarea>
                                     </div>
                                 <button type="submit" class="register-btn">Create</button>
                             </form>

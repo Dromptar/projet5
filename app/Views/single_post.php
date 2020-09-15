@@ -1,4 +1,4 @@
-<?php $title = 'single-post'; ?>
+<?php $title = 'single Post'; ?>
    
 <?php ob_start(); ?>
 
@@ -27,6 +27,9 @@
                 <div class="col-lg-10 offset-lg-1">
                     <div class="bd-text">
                         <div class="bd-title">
+                    
+                            
+                    
                             <p>Your clients would like to see optimal results for minimal work. For this reason, it can
                                 be difficult to convince them that a website redesign enhances SEO strategies. However,
                                 if you try to redesign a site without taking SEO into account, you are going to face

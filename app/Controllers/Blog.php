@@ -13,14 +13,15 @@ class Blog extends BaseController
 		return view('blog', $data);
 	}
 
-	public function post()
+	public function blogPost($id)
 	{
-		$singlePost = 'This is a single post';
+		$model = new BlogModel();
+		$data['blogPost'] = $model->find($id);
+		
+		return view('single_post');
 
-		$data['singlePost'] = $singlePost;
-
-		return view('single_post', $data);
 	}
+		
 
 	public function newPost()
 	{
@@ -30,9 +31,9 @@ class Blog extends BaseController
 		
 		if($this->request->getMethod() == 'post'){
 			$model = new BlogModel();
+			/*var_dump($_POST);*/
 			$model->save($_POST);
 		}
-
 		return view('new_post');
 	}	
 

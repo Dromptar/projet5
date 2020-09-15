@@ -22,25 +22,11 @@
     <!-- Breadcrumb Section End -->
 
 
+    <a href="newPost">Creer un nuevo post</a>
+
     <!-- Blog Editor Section Start -->
 
-    <section id="edition">
-
-    <form action="" method="post">
-            <div id="editor_inputs">
-                <input type="text" id="author" name="author" placeholder="Auteur"/>
-                <input type="text" id="title" name="title" placeholder="Titre"/>
-                <input type="text" id="quote" name="quote" placeholder="Citation"/>
-            </div>
-            <div>
-                <textarea id="texteditor" name="texteditor">Bonjour Jean !</textarea>
-            </div>
-            <div>
-                <input class="publish" type="submit" name="publish" value="Publier" />
-            </div>
-    </form>
-
-    </section>
+    
 
     <!-- Blog Editor Section End -->
     

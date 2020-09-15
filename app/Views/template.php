@@ -117,6 +117,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/textEditor.js"></script>
+    <script src="https://cdn.tiny.cloud/1/m4l5idahpp956ut9d7c8qydikp11k175cpm5zbdholz40oc1/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 </body>
 
 </html>

@@ -40,7 +40,7 @@ $routes->add('gallery', 'Home::gallery');
 $routes->add('contact', 'Home::contact');
 
 //paths for the blog
-$routes->add('post', 'Blog::post');
+$routes->add('blogPost/(:num)', 'Blog::blogPost/$1');
 $routes->add('newPost', 'Blog::newPost');
 
 
