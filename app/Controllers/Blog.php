@@ -6,9 +6,12 @@ class Blog extends BaseController
 {
 	public function index()
 	{
-		$posts = ['Post 1', 'Post 2', 'Post 3'];
+		$model = new BlogModel();
+		$data['posts'] = $model->find();
+		var_dump($data);
+		/*$posts = ['Post 1', 'Post 2', 'Post 3'];
 
-		$data['posts'] = $posts;
+		$data['posts'] = $posts;*/
 
 		return view('blog', $data);
 	}
@@ -16,9 +19,9 @@ class Blog extends BaseController
 	public function blogPost($id)
 	{
 		$model = new BlogModel();
-		$data['blogPost'] = $model->find($id);
+		$data['singlePost'] = $model->find($id);
 		
-		return view('single_post');
+		return view('single_post', $data);
 
 	}
 		

@@ -28,7 +28,7 @@
             <?php foreach($posts as $post) : ?>
                 <div class="col-lg-4 col-md-6">
                     <div class="single-blog-item">
-                        <?= view_cell('\App\Libraries\Blog::postItem', ['title' => $post]); ?>   
+                        <?= view_cell('\App\Libraries\Blog::postItem', $post); ?>   
                     </div>
                 </div>
              <?php endforeach; ?>
