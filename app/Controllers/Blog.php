@@ -16,6 +16,8 @@ class Blog extends BaseController
 	{
 		$model = new BlogModel();
 		$data['singlePost'] = $model->find($id);
+
+		// commentaire test JDS
 		
 		return view('single_post', $data);
 
