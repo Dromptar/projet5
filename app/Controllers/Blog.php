@@ -8,10 +8,6 @@ class Blog extends BaseController
 	{
 		$model = new BlogModel();
 		$data['posts'] = $model->find();
-		var_dump($data);
-		/*$posts = ['Post 1', 'Post 2', 'Post 3'];
-
-		$data['posts'] = $posts;*/
 
 		return view('blog', $data);
 	}
@@ -28,10 +24,7 @@ class Blog extends BaseController
 
 	public function newPost()
 	{
-		/*$newPost = 'This is a new post';
-
-		$data['newPost'] = $newPost;*/
-		
+				
 		if($this->request->getMethod() == 'post'){
 			$model = new BlogModel();
 			/*var_dump($_POST);*/

@@ -5,7 +5,7 @@
   
 
     <!-- Blog Details Hero Section Begin -->
-    <section class="blog-details-hero set-bg" data-setbg="assets/img/hero-bg.jpg" style="background-image: url(assets/img/hero-bg.jpg);">
+    <section class="blog-details-hero set-bg" data-setbg="/assets/img/hero-bg.jpg" style="background-image: url(/assets/img/hero-bg.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

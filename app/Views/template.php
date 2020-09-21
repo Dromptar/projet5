@@ -15,12 +15,12 @@
         rel="stylesheet">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/slicknav.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
 </head>
 
 <body>
@@ -33,19 +33,19 @@
     <header class="header-section">
         <div class="container">
             <div class="logo">
-                <a href="./index.php">
-                    <img src="assets/img/logo.png" alt="">
+                <a href="/home">
+                    <img src="/assets/img/logo.png" alt="">
                 </a>
             </div>
             <div class="nav-menu">
                 <nav class="mainmenu mobile-menu">
                     <ul>
-                        <li class="active"><a href="./index.php">Home</a></li>
-                        <li><a href="about">La propuesta</a></li>
-                        <li><a href="blog">Actividades</a></li>
-                        <li><a href="tips">Truquitos</a></li>
-                        <li><a href="gallery">Galeria</a></li>
-                        <li><a href="contact">Contacto</a></li>
+                        <li class="active"><a href="/home">Home</a></li>
+                        <li><a href="/about">La propuesta</a></li>
+                        <li><a href="/blog">Actividades</a></li>
+                        <li><a href="/tips">Truquitos</a></li>
+                        <li><a href="/gallery">Galeria</a></li>
+                        <li><a href="/contact">Contacto</a></li>
                     </ul>
                 </nav>
                 <a href="#" class="primary-btn signup-btn">Empeza Hoy</a>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </div>
-            <div class="subscribe-option set-bg" data-setbg="assets/img/para_bannerCut.jpeg">
+            <div class="subscribe-option set-bg" data-setbg="/assets/img/para_bannerCut.jpeg">
                 <div class="so-text">
                     <h4>Bouge Avec Moi</h4>
                 </div>
@@ -110,13 +110,13 @@
 
     <!-- Js Plugins -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
-    <script src="assets/js/jquery.slicknav.js"></script>
+    <script src="/assets/js/jquery.slicknav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/textEditor.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/textEditor.js"></script>
     <script src="https://cdn.tiny.cloud/1/m4l5idahpp956ut9d7c8qydikp11k175cpm5zbdholz40oc1/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 </body>
 

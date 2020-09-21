@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="assets/img/robotitorz.jpeg" style="background-image: url(assets/img/robotitorz.jpeg);">
+    <section class="breadcrumb-section set-bg" data-setbg="/assets/img/robotitorz.jpeg" style="background-image: url(/assets/img/robotitorz.jpeg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -29,7 +29,7 @@
                             <div class="section-title">
                                 <h2>Create a new post !</h2>
                             </div>
-                            <form method="POST" class="register-form" action="newPost">
+                            <form enctype="multipart/form-data" method="POST" class="register-form" action="blog/newPost">
                                 <div class="row">
                                 <div class="col-lg-6">
                                         <label for="name">Autor</label>
@@ -43,6 +43,10 @@
                                         <label for="name">Contenido</label>
                                         <textarea id="texteditor" name="content"></textarea>
                                     </div>
+                                    <div class="col-lg-6">
+                                        <label for="name">Image</label>
+                                        <textarea type="text" name="image"></textarea>
+                                    </div>   
                                 <button type="submit" class="register-btn">Create</button>
                             </form>
                         </div>
