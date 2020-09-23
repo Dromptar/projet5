@@ -22,7 +22,7 @@
     <!-- Breadcrumb Section End -->
 
 
-    <a href="blog/newPost">Creer un nuevo post</a>
+    <a href="newPost">Creer un nuevo post</a>
 
     <!-- Blog Editor Section Start -->
 

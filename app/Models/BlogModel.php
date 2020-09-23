@@ -10,7 +10,7 @@ class BlogModel extends Model
     // protected $returnType     = 'array';
     // protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['author', 'title', 'content','image'];
+    protected $allowedFields = ['author', 'title', 'content','picture'];
 
     // protected $useTimestamps = false;
     // protected $createdField  = 'created_at';

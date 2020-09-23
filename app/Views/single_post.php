@@ -192,6 +192,8 @@
     </section>
     <!-- Latest Blog Section End -->
 
+    <a href="/blog/deletePost/<?= $singlePost['post_id'] ?>" class="primary-btn">Delete</a>
+
 <?php $content = ob_get_clean(); ?>
 
 

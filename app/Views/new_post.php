@@ -29,7 +29,7 @@
                             <div class="section-title">
                                 <h2>Create a new post !</h2>
                             </div>
-                            <form enctype="multipart/form-data" method="POST" class="register-form" action="blog/newPost">
+                            <form enctype="multipart/form-data" method="POST" class="register-form" action="newPost">
                                 <div class="row">
                                 <div class="col-lg-6">
                                         <label for="name">Autor</label>
@@ -40,14 +40,14 @@
                                         <input type="text" id="name" name="title">
                                     </div>
                                     <div class="col-lg-6">
-                                        <label for="name">Contenido</label>
-                                        <textarea id="texteditor" name="content"></textarea>
-                                    </div>
-                                    <div class="col-lg-6">
                                         <label for="name">Image</label>
-                                        <textarea type="text" name="image"></textarea>
-                                    </div>   
-                                <button type="submit" class="register-btn">Create</button>
+                                        <input type="text" name="picture">
+                                    </div>  
+                                    <div class="col-lg-6">
+                                        <label for="name">Contenido</label>
+                                        <textarea id="editor" name="content"></textarea>
+                                    </div> 
+                                <button type="submit" class="register-btn">Publicar</button>
                             </form>
                         </div>
                     </div>
@@ -55,6 +55,7 @@
             </div>
         </div>
     </section>
+
 
 
 <?php $content = ob_get_clean(); ?>

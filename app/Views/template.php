@@ -14,6 +14,8 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
 
+ 
+
     <!-- Css Styles -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="/assets/css/font-awesome.min.css" type="text/css">
@@ -116,8 +118,10 @@
     <script src="/assets/js/jquery.slicknav.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="/assets/js/main.js"></script>
-    <script src="/assets/js/textEditor.js"></script>
     <script src="https://cdn.tiny.cloud/1/m4l5idahpp956ut9d7c8qydikp11k175cpm5zbdholz40oc1/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+    <script src="/assets/js/tinyMce.js"></script>
+    
+
 </body>
 
 </html>
