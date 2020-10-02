@@ -28,9 +28,26 @@ class Validation
 	public $templates = [
 		'list'   => 'CodeIgniter\Validation\Views\list',
 		'single' => 'CodeIgniter\Validation\Views\single',
+		'my_list' => '_errors_list',
 	];
 
 	//--------------------------------------------------------------------
 	// Rules
 	//--------------------------------------------------------------------
+
+
+    public $signup = [
+        'username' => [
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'You must choose a Username.'
+            ]
+        ],
+        'email'    => [
+            'rules'  => 'required|valid_email',
+            'errors' => [
+                'valid_email' => 'Please check the Email field. It does not appear to be valid.'
+            ]
+        ],
+    ];
 }

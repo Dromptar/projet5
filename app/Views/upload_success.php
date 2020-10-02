@@ -1,4 +1,4 @@
-<?php $title = 'Actividades'; ?>
+<?php $title = 'Upload Form'; ?>
    
 <?php ob_start(); ?>
 
@@ -10,8 +10,8 @@
                     <div class="breadcrumb-text">
                         <h2>Blog</h2>
                         <div class="breadcrumb-option">
-                            <a href="/home"><i class="fa fa-home"></i> Home</a>
-                            <span>Blog</span>
+                            <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                            <span>Upload Form</span>
                         </div>
                     </div>
                 </div>
@@ -20,22 +20,17 @@
     </section>
     <!-- Breadcrumb Section End -->
 
+    <h3>Your file was successfully uploaded!</h3>
 
-    <!-- Blog Section Begin -->
-    <section class="blog-section spad">
-        <div class="container">
-            <div class="row">
-            <?php foreach($posts as $post) : ?>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-item">
-                        <?= view_cell('\App\Libraries\Blog::postItem', $post); ?>   
-                    </div>
-                </div>
-             <?php endforeach; ?>
-            </div>
-        </div>
-    </section>
-    <!-- Blog Section End -->
+    <ul>
+    <?php foreach ($upload_data as $item => $value):?>
+    <li><?php echo $item;?>: <?php echo $value;?></li>
+    <?php endforeach; ?>
+    </ul>
+
+    <p><?php echo anchor('upload', 'Upload Another File!'); ?></p>
+
+
 
 <?php $content = ob_get_clean(); ?>
 

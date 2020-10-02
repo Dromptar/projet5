@@ -1,4 +1,4 @@
-<?php $title = 'New Post'; ?>
+<?php $title = 'Edit Post'; ?>
    
 <?php ob_start(); ?>
 
@@ -27,28 +27,27 @@
                     <div class="col-lg-8">
                         <div class="register-text">
                             <div class="section-title">
-                                <h2>Create a new post !</h2>
+                                <h2>Edicion de post !</h2>
                             </div>
-                            
-                            <form enctype="multipart/form-data" method="POST" class="register-form" action="newPost">
+                            <form enctype="multipart/form-data" method="POST" class="register-form" >
                                 <div class="row">
                                 <div class="col-lg-6">
                                         <label for="name">Autor</label>
-                                        <input type="text" id="name" name="author">
+                                        <input type="text" id="name" name="author" value="<?= $post['author'] ?>">
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="name">Titulo</label>
-                                        <input type="text" id="name" name="post_title">
+                                        <input type="text" id="name" name="post_title" value="<?= $post['post_title'] ?>">
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="name">Image</label>
-                                        <input type="file" name="picture">
+                                        <input type="text" name="picture" value="<?= $post['picture'] ?>">
                                     </div>  
                                     <div class="col-lg-6">
                                         <label for="name">Contenido</label>
-                                        <textarea id="editor" name="post_content"></textarea>
+                                        <textarea id="editor" name="post_content"><?= $post['post_content'] ?></textarea>
                                     </div> 
-                                <button type="submit" class="register-btn">Publicar</button>
+                                <button type="submit" class="register-btn">Editar</button>
                             </form>
                         </div>
                     </div>

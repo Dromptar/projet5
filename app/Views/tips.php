@@ -10,7 +10,7 @@
                     <div class="breadcrumb-text">
                         <h2>Truquitos</h2>
                         <div class="breadcrumb-option">
-                            <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                            <a href="/home"><i class="fa fa-home"></i> Home</a>
                             <span>Class</span>
                         </div>
                     </div>

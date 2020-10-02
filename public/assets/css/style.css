@@ -259,6 +259,7 @@ ul, ol {
 	font-weight: 600;
 	padding: 28px 0;
 	position: relative;
+	text-shadow: 1px 1px black;
 }
 .nav-menu .mainmenu ul li a:hover:after {
 	opacity: 1;
@@ -321,6 +322,8 @@ ul, ol {
 }
 .about-pic img {
 	min-width: 100%;
+	border: 2px solid #313131;
+	box-shadow: 3px 3px #313131;
 }
 .about-pic .play-btn {
 	position: absolute;
@@ -1030,10 +1033,11 @@ ul, ol {
 }
 .breadcrumb-text h2 {
 	font-size: 60px;
-	color: #ffffff;
+	color: black;
 	font-weight: 600;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+	text-shadow: 2px 2px white;
 }
 .breadcrumb-text .breadcrumb-option a {
 	font-size: 16px;
@@ -1311,11 +1315,12 @@ ul, ol {
 }
 .bd-hero-text h2 {
 	color: #ffffff;
+	text-shadow: 1px 1px black;
 	font-size: 40px;
 	font-weight: 600;
 	line-height: 60px;
 	text-transform: uppercase;
-	margin-top: 15px;
+	margin-top: 25px;
 }
 .bd-text .bd-title {
 	margin-bottom: 55px;

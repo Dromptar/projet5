@@ -16,27 +16,24 @@ class Blog extends BaseController
 	{
 		$model = new BlogModel();
 		$data['singlePost'] = $model->find($id);
-
-		// commentaire test JDS
 		
 		return view('single_post', $data);
-
 	}
 		
 
 	public function newPost()
-	{
-				
+	{		
 		if($this->request->getMethod() == 'post'){
 			$model = new BlogModel();
 			/*var_dump($_POST);*/
 			$model->save($_POST);
+			return redirect()->to('/blog');
 		}
 		return view('new_post');
 	}	
 
-	public function deletePost($id) {
-
+	public function deletePost($id) 
+	{
 		$model = new BlogModel();
 		$post = $model->find($id);
 		
@@ -44,7 +41,27 @@ class Blog extends BaseController
 			$model->delete($id);
 			return redirect()->to('/blog');
 		}
-
 	}
 
+	public function editPost($id)
+	{		
+		$model = new BlogModel();
+		$post = $model->find($id);
+
+
+		if($this->request->getMethod() == 'post'){
+			$model = new BlogModel();
+			$_POST['post_id'] = $id;
+			$model->save($_POST);
+			$post = $model->find($id);
+			
+		}
+
+		$data['post'] = $post;
+		return view('edit_post', $data);
+	}	
+
+
 }
+
+

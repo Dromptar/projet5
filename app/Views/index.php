@@ -54,7 +54,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="services-pic">
-                        <img src="assets/img/parana/morning_workout.jpg" alt="">
+                        <img src="assets/img/parana/JPHome2BW.jpg" alt="">
                     </div>
                 </div>
                 <div class="col-lg-6">

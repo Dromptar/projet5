@@ -1,4 +1,4 @@
-<?php $title = 'Galeria'; ?>
+<?php $title = 'Contaco'; ?>
    
 <?php ob_start(); ?>
 
@@ -10,7 +10,7 @@
                     <div class="breadcrumb-text">
                         <h2>Contacto</h2>
                         <div class="breadcrumb-option">
-                            <a href="./index.html"><i class="fa fa-home"></i> Home</a>
+                            <a href="/home"><i class="fa fa-home"></i> Home</a>
                             <span>Contact</span>
                         </div>
                     </div>

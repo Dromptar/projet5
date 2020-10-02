@@ -2,15 +2,15 @@
 
 use CodeIgniter\Model;
 
-class BlogModel extends Model
+class MembersModel extends Model
 {
-    protected $table      = 'blog_posts';
-    protected $primaryKey = 'post_id';
+    protected $table      = 'members';
+    protected $primaryKey = 'member_id';
 
     // protected $returnType     = 'array';
     // protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['author', 'post_title', 'post_content','picture', 'post_created_at', 'post_updated_at'];
+    protected $allowedFields = ['pseudo', 'pass', 'email', 'regist_date'];
 
     protected $useTimestamps = true;
     protected $createdField  = 'post_created_at';
