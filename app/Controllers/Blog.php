@@ -19,15 +19,20 @@ class Blog extends BaseController
 		
 		return view('single_post', $data);
 	}
-		
 
+	
 	public function newPost()
 	{		
+		$file = $this->request->getFile('picture');
+		var_dump($file);
+	
 		if($this->request->getMethod() == 'post'){
+
 			$model = new BlogModel();
-			/*var_dump($_POST);*/
+
 			$model->save($_POST);
 			return redirect()->to('/blog');
+			
 		}
 		return view('new_post');
 	}	
