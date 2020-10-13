@@ -42,6 +42,18 @@ class Validation
             'errors' => [
                 'required' => 'You must choose a Username.'
             ]
+		],
+		'password' => [
+            'rules'  => 'required',
+            'errors' => [
+                'required' => 'You must choose a Password.'
+            ]
+		],
+		'pass_confirm' => [
+            'rules'  => 'required|matches[password]',
+            'errors' => [
+                'required' => 'The password are differents.'
+            ]
         ],
         'email'    => [
             'rules'  => 'required|valid_email',
@@ -49,5 +61,6 @@ class Validation
                 'valid_email' => 'Please check the Email field. It does not appear to be valid.'
             ]
         ],
-    ];
+	];
+	
 }

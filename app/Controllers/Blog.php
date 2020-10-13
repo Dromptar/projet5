@@ -22,14 +22,17 @@ class Blog extends BaseController
 
 	
 	public function newPost()
-	{		
-		$file = $this->request->getFile('picture');
-		var_dump($file);
+	{	
 	
 		if($this->request->getMethod() == 'post'){
 
+			$file = $this->request->getFile('picture');
+			$fileName = $file->getRandomName();
+			if(!$file->hasMoved()){
+				$file->move('./uploads/images/blog', $fileName);
+			}
 			$model = new BlogModel();
-
+			$_POST['picture'] = $fileName;
 			$model->save($_POST);
 			return redirect()->to('/blog');
 			
@@ -57,8 +60,16 @@ class Blog extends BaseController
 		if($this->request->getMethod() == 'post'){
 			$model = new BlogModel();
 			$_POST['post_id'] = $id;
+			$file = $this->request->getFile('picture');
+			$fileName = $file->getRandomName();
+			if(!$file->hasMoved()){
+				$file->move('./uploads/images/blog', $fileName);
+			}
+			
+			$_POST['picture'] = $fileName;
 			$model->save($_POST);
 			$post = $model->find($id);
+			return redirect()->to('/blog');
 			
 		}
 

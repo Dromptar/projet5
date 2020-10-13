@@ -41,7 +41,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="name">Image</label>
-                                        <input type="text" name="picture" value="<?= $post['picture'] ?>">
+                                        <input type="file" name="picture" value="">
                                     </div>  
                                     <div class="col-lg-6">
                                         <label for="name">Contenido</label>

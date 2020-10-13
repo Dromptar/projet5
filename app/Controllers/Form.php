@@ -14,7 +14,7 @@ class Form extends BaseController
         }
         else
         {
-            echo view('success');
+            echo view('Success');
         }
     }
 }
