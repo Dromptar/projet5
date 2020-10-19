@@ -31,23 +31,23 @@
                                 <h2>Crea tu cuenta !</h2>
                                 <p>La primera clase con nosotros es gratis ! </p>
                             </div>
-                            <form action="#" class="register-form">
+                            <form  class="register-form" method="POST" action="register">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <label for="name">Nombre</label>
-                                        <input type="text" id="name">
+                                        <label for="name">Pseudo</label>
+                                        <input type="text" id="name" name="pseudo">
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="email">E-mail</label>
-                                        <input type="text" id="email">
+                                        <input type="text" id="email" name="email">
                                     </div>
                                     <div class="col-lg-6">
-                                        <label for="last-name">Apellido</label>
-                                        <input type="text" id="last-name">
+                                        <label for="last-name">contrasena</label>
+                                        <input type="password" id="last-name" name="pass">
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="mobile">Telefono</label>
-                                        <input type="text" id="mobile">
+                                        <input type="text" id="mobile" name="phone">
                                     </div>
                                 </div>
                                 <button type="submit" class="register-btn">A Entrenar</button>

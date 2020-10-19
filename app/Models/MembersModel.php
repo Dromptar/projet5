@@ -10,12 +10,12 @@ class MembersModel extends Model
     // protected $returnType     = 'array';
     // protected $useSoftDeletes = true;
 
-    protected $allowedFields = ['pseudo', 'pass', 'email', 'regist_date'];
+    protected $allowedFields = ['pseudo', 'is_admin', 'pass', 'email', 'phone', 'registed_at', 'updated_at'];
 
     protected $useTimestamps = true;
-    protected $createdField  = 'post_created_at';
-    protected $updatedField  = 'post_updated_at';
-    // protected $deletedField  = 'deleted_at';
+    protected $createdField  = 'registed_at';
+    protected $updatedField  = 'updated_at';
+    //protected $deletedField  = 'deleted_at';
 
     // protected $validationRules    = [];
     // protected $validationMessages = [];

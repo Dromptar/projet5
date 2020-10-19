@@ -20,26 +20,48 @@ class Blog extends BaseController
 		return view('single_post', $data);
 	}
 
-	
-	public function newPost()
-	{	
-	
-		if($this->request->getMethod() == 'post'){
+	public function newPost() {
 
+		return view('new_post');
+	}
+
+	
+
+		
+	public function post() {	
+		
+		if(($this->request->getMethod() == 'post') &&
+		!empty($_POST['author'] && htmlspecialchars($_POST['author'])) &&
+		!empty($_POST['post_title'] && htmlspecialchars($_POST['post_title'])) &&
+		!empty($_POST['post_content'] && htmlspecialchars($_POST['post_content'])) &&
+		isset($_FILES['picture'])) {
+		 
 			$file = $this->request->getFile('picture');
 			$fileName = $file->getRandomName();
-			if(!$file->hasMoved()){
+			$max_size = 500000;
+			$size = filesize($file);
+			$allowed_type= ['png', 'gif', 'jpg', 'jpeg'];
+			
+			if(	($size <= $max_size) &&
+				!$file->hasMoved()) {
+			 
 				$file->move('./uploads/images/blog', $fileName);
+				
 			}
+
 			$model = new BlogModel();
 			$_POST['picture'] = $fileName;
 			$model->save($_POST);
 			return redirect()->to('/blog');
-			
-		}
-		return view('new_post');
-	}	
 
+		} else {
+			echo "<script>alert(\"Veuillez remplir tous les champs.\")</script>";
+			return view('new_post');
+		}
+				
+	}
+					
+	
 	public function deletePost($id) 
 	{
 		$model = new BlogModel();

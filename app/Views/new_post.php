@@ -30,7 +30,8 @@
                                 <h2>Create a new post !</h2>
                             </div>
                             
-                            <form enctype="multipart/form-data" method="POST" class="register-form" action="newPost">
+
+                            <form enctype="multipart/form-data" method="POST" class="register-form" action="post">
                                 <div class="row">
                                 <div class="col-lg-6">
                                         <label for="name">Autor</label>

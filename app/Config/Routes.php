@@ -44,6 +44,8 @@ $routes->add('contact', 'Home::contact');
 $routes->group('blog', function($routes) {
 	$routes->add('post/(:num)', 'Blog::blogPost/$1');
 });
+$routes->add('newPost', 'Blog::newPost');
+$routes->add('post', 'Blog::post');
 
 
 
@@ -51,7 +53,8 @@ $routes->group('blog', function($routes) {
 //paths for the logs
 $routes->add('adminLog', 'Logs::adminLog');
 $routes->add('adminSpace', 'Logs::adminSpace');
-$routes->add('newPost', 'Blog::newPost');
+$routes->add('register', 'Logs::register');
+
 
 
 
