@@ -39,10 +39,12 @@ class Blog extends BaseController
 			$file = $this->request->getFile('picture');
 			$fileName = $file->getRandomName();
 			$max_size = 500000;
-			$size = filesize($file);
-			$allowed_type= ['png', 'gif', 'jpg', 'jpeg'];
+			$extension = $file->getClientMimeType();
+			$allowed_type = ['image/png', 'image/gif', 'image/jpg', 'image/jpeg'];
+
 			
-			if(	($size <= $max_size) &&
+			if(	(filesize($file) <= $max_size) &&
+				(in_array($extension, $allowed_type)) &&
 				!$file->hasMoved()) {
 			 
 				$file->move('./uploads/images/blog', $fileName);

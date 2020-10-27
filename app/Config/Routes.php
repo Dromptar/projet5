@@ -48,13 +48,13 @@ $routes->add('newPost', 'Blog::newPost');
 $routes->add('post', 'Blog::post');
 
 
-
-/*$routes->add('blog/newPost', 'Blog::newPost');*/
 //paths for the logs
 $routes->add('adminLog', 'Logs::adminLog');
 $routes->add('adminSpace', 'Logs::adminSpace');
+$routes->add('registForm', 'Logs::registForm');
 $routes->add('register', 'Logs::register');
-
+$routes->add('connectForm', 'Logs::connectForm');
+$routes->add('connection', 'Logs::connection');
 
 
 

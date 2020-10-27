@@ -20,50 +20,33 @@
     </section>
     <!-- Breadcrumb Section End -->
 
-    <!-- Register Section Begin -->
-    <section class="register-section classes-page spad">
+    <section class="about-section about-page spad">
         <div class="container">
-            <div class="classes-page-text">
-                <div class="row">
-                    <div class="col-lg-8">
-                        <div class="register-text">
-                            <div class="section-title">
-                                <h2>Crea tu cuenta !</h2>
-                                <p>La primera clase con nosotros es gratis ! </p>
-                            </div>
-                            <form  class="register-form" method="POST" action="register">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <label for="name">Pseudo</label>
-                                        <input type="text" id="name" name="pseudo">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="email">E-mail</label>
-                                        <input type="text" id="email" name="email">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="last-name">contrasena</label>
-                                        <input type="password" id="last-name" name="pass">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="mobile">Telefono</label>
-                                        <input type="text" id="mobile" name="phone">
-                                    </div>
-                                </div>
-                                <button type="submit" class="register-btn">A Entrenar</button>
-                            </form>
-                        </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="about-pic">
+                        <img src="assets/img/truquito.jpg" alt="">
+                        <!--<a href="https://www.youtube.com/watch?v=SlPhMPnQ58k" class="play-btn video-popup">
+                            <img src="img/play.png" alt="">
+                        </a>-->
                     </div>
-                    <div class="col-lg-4">
-                        <div class="register-pic">
-                            <img src="assets/img/parana/team2.jpeg" alt="">
-                        </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-text">
+                        <h2>Bienvenidos a los "truquitos" del Coach!</h2>
+                        <p class="first-para">Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
+                            sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate
+                            cursus a amet.</p>
+                        <p class="second-para">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
+                            quam semper libero sit amet.</p>
+                        <img src="img/about-signature.png" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Register Section End -->
+
+    <video src="assets/img/rutinaBrazos.mp4" controls></video>
 
     
 <?php $content = ob_get_clean(); ?>

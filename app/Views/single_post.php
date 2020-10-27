@@ -12,7 +12,7 @@
                     <div class="bd-hero-text">
                         <span>Actividad</span>
                         <h2><?= $singlePost['post_title'] ?></h2>
-                        <a href="/blog"><i class="fa fa-home"></i> Home</a>
+                        <a href="/blog"><i class="fa fa-home"></i>Actividades</a>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                         <div class="bd-pic">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="/assets/img/blog/bd-1.jpg" alt="">
+                                    <img src="./uploads/images/blog/<?= $singlePost['picture']?>">
                                 </div>
                                 <div class="col-lg-6">
                                     <img src="/assets/img/blog/bd-2.jpg" alt="">

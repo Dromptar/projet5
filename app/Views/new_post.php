@@ -43,7 +43,7 @@
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="name">Image</label>
-                                        <input type="file" name="picture">
+                                        <input type="file" accept="image/*" name="picture">
                                     </div>  
                                     <div class="col-lg-6">
                                         <label for="name">Contenido</label>

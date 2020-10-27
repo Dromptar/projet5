@@ -124,7 +124,7 @@ ul, ol {
 	padding: 0 12px;
 	color: #ffffff;
 	text-align: center;
-	width: 160px;
+	width: 130px;
 	height: 46px;
 	border-left: 2px solid #eb3c5a;
 	border-right: 2px solid #f67831;
@@ -161,6 +161,7 @@ ul, ol {
 	z-index: -1;
 	opacity: 1;
 }
+
 /* Preloder */
 
 #preloder {
@@ -279,7 +280,7 @@ ul, ol {
 }
 .nav-menu .signup-btn {
 	display: inline-block;
-	margin: 16px 0px 16px 30px;
+	margin: 16px 0px 16px 0px;
 }
 .nav-menu .signup-btn:after {
 	opacity: 0;

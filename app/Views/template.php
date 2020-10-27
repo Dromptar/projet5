@@ -50,7 +50,8 @@
                         <li><a href="/contact">Contacto</a></li>
                     </ul>
                 </nav>
-                <a href="#" class="primary-btn signup-btn">Empeza Hoy</a>
+                <a href="/registForm" class="primary-btn signup-btn">Empeza Hoy</a>
+                <a href="/connectForm" class="primary-btn signup-btn">Mi cuenta</a>
             </div>
             <div id="mobile-menu-wrap"></div>
         </div>
