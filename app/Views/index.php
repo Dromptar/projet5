@@ -108,36 +108,14 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-item">
-                        <img src="assets/img/blog/grouprz.jpg" alt="">
-                        <div class="blog-widget">
-                            <div class="bw-date">Date à recup en database</div>
-                            <a href="#" class="tag">#Gym</a>
+                    <?php foreach($posts as $post) : ?>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="single-blog-item">
+                            <?= view_cell('\App\Libraries\Blog::postItem', $post); ?>   
+                            </div>
                         </div>
-                        <h4><a href="#">Titre a recup en database</a></h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-item">
-                        <img src="assets/img/blog/clase1cutrz.jpg" alt="">
-                        <div class="blog-widget">
-                            <div class="bw-date">Date à recup en database</div>
-                            <a href="#" class="tag">#Sport</a>
-                        </div>
-                        <h4><a href="#">Titre a recup en database</a></h4>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single-blog-item">
-                        <img src="assets/img/blog/berduc2rz.jpg" alt="">
-                        <div class="blog-widget">
-                            <div class="bw-date">Date à recup en database</div>
-                            <a href="#" class="tag">#Body</a>
-                        </div>
-                        <h4><a href="#">Titre a recup en database</a></h4>
-                    </div>
-                </div>
+                     <?php endforeach; ?>
+                 
             </div>
         </div>
     </section>

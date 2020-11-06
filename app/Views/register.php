@@ -1,4 +1,4 @@
-<?php $title = 'Tips'; ?>
+<?php $title = 'Registrate'; ?>
    
 <?php ob_start(); ?>
 
@@ -11,7 +11,7 @@
                         <h2>Registrate</h2>
                         <div class="breadcrumb-option">
                             <a href="/home"><i class="fa fa-home"></i> Home</a>
-                            <span>Class</span>
+                            <span>Registrate</span>
                         </div>
                     </div>
                 </div>
@@ -34,7 +34,7 @@
                             <form  class="register-form" method="POST" action="register">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <label for="name">Pseudo</label>
+                                        <label for="name">Nombre</label>
                                         <input type="text" id="name" name="username">
                                     </div>
                                     <div class="col-lg-6">
@@ -48,10 +48,6 @@
                                     <div class="col-lg-6">
                                         <label for="last-name">Confirma la contrasena</label>
                                         <input type="password" id="last-name" name="pass_confirmed">
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <label for="mobile">Telefono</label>
-                                        <input type="text" id="mobile" name="phone">
                                     </div>
                                 </div>
                                 <button type="submit" class="register-btn">A Entrenar</button>

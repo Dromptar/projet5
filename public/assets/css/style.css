@@ -36,6 +36,7 @@ html, body {
 	height: 100%;
 	font-family: "Poppins", sans-serif;
 	-webkit-font-smoothing: antialiased;
+	background-color: menu;
 	font-smoothing: antialiased;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -238,10 +239,13 @@ ul, ol {
 }
 .logo a {
 	display: inline-block;
-	padding: 24px 0 29px;
+	/*padding: 24px 0 29px;*/
 }
 .nav-menu {
 	float: right;
+	display: block;
+	position: relative;
+	top: 20px;
 }
 .nav-menu .mainmenu {
 	display: inline-block;
@@ -1266,11 +1270,13 @@ ul, ol {
 	padding-bottom: 50px;
 }
 .single-blog-item {
+	text-align: center;
 	margin-bottom: 42px;
 }
 .single-blog-item img {
 	min-width: 100%;
 	margin-bottom: 30px;
+	border-radius: 50%;
 }
 .single-blog-item .blog-widget {
 	margin-bottom: 10px;
@@ -1325,6 +1331,7 @@ ul, ol {
 }
 .bd-text .bd-title {
 	margin-bottom: 55px;
+	text-align: center;
 }
 .bd-text .bd-title p {
 	font-size: 17px;

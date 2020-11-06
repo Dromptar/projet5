@@ -1,5 +1,5 @@
 <?php $title = 'Tips'; ?>
-   
+
 <?php ob_start(); ?>
 
     <!-- Breadcrumb Section Begin -->
@@ -33,7 +33,7 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="about-text">
-                        <h2>Bienvenidos a los "truquitos" del Coach!</h2>
+                        <h2>Bienvenido a los "truquitos" del Coach <?= $_SESSION['userSession']?>!</h2>
                         <p class="first-para">Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
                             sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate
                             cursus a amet.</p>

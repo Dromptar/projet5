@@ -7,7 +7,8 @@ class Blog extends BaseController
 	public function index()
 	{
 		$model = new BlogModel();
-		$data['posts'] = $model->find();
+		$data['posts'] = $model->orderBy('post_created_at', 'desc')
+							   ->findAll();
 
 		return view('blog', $data);
 	}

@@ -36,7 +36,7 @@
         <div class="container">
             <div class="logo">
                 <a href="/home">
-                    <img src="/assets/img/logo.png" alt="">
+                    <img src="/assets/img/BamLogoRZ.png" alt="">
                 </a>
             </div>
             <div class="nav-menu">
@@ -46,12 +46,29 @@
                         <li><a href="/about">La propuesta</a></li>
                         <li><a href="/blog">Actividades</a></li>
                         <li><a href="/tips">Truquitos</a></li>
-                        <li><a href="/gallery">Galeria</a></li>
+                        <!-- <li><a href="/gallery">Galeria</a></li> !-->
                         <li><a href="/contact">Contacto</a></li>
                     </ul>
                 </nav>
-                <a href="/registForm" class="primary-btn signup-btn">Empeza Hoy</a>
-                <a href="/connectForm" class="primary-btn signup-btn">Mi cuenta</a>
+                <?php if (isset($_SESSION['userSession']) && $_SESSION['admin'] == 0)
+                {
+                ?>
+                    <a href="/connectForm" class="primary-btn signup-btn"><?= $_SESSION['userSession']?></a>
+                    <a href="/Logs/disconnection" class="primary-btn signup-btn">Desconectar</a>
+                <?php
+                } elseif(isset($_SESSION['admin']) && $_SESSION['admin'] == '1') {
+                ?>
+                    <a href="/adminSpace" class="primary-btn signup-btn"><?= $_SESSION['userSession']?></a>
+                    <a href="/Logs/disconnection" class="primary-btn signup-btn">Desconectar</a>
+                <?php
+                }else {
+                ?>
+                    <a href="/registForm" class="primary-btn signup-btn">Empeza Hoy</a>
+                    <a href="/connectForm" class="primary-btn signup-btn">Mi cuenta</a>
+                <?php
+                }
+                ?>
+
             </div>
             <div id="mobile-menu-wrap"></div>
         </div>
@@ -78,11 +95,10 @@
                         <p>morvant.simon@gmail.com</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="contact-option">
-                        <span><a href="adminLog">Espacio Administrador</a></span>
-                    </div>
+                <div class="footer-social">
+                    <a href="https://www.instagram.com/simonmrvt/?hl=fr">Seguime en Instagram <i class="fa fa-instagram"></i></a>
                 </div>
+                
             </div>
             <div class="subscribe-option set-bg" data-setbg="/assets/img/para_bannerCut.jpeg">
                 <div class="so-text">
@@ -101,11 +117,6 @@
                 <p>&copy;<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
   Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
   <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></p>
-                <div class="footer-social">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="https://www.instagram.com/simonmrvt/?hl=fr"><i class="fa fa-instagram"></i></a>
-                </div>
             </div>
         </div>
     </footer>

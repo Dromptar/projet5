@@ -1,11 +1,18 @@
 <?php namespace App\Controllers;
 
+use App\Models\BlogModel;
+
 class Home extends BaseController
 {
 
 	public function index()
 	{
-		return view('index');
+		$model = new BlogModel();
+		$limit = 3;
+		$data['posts'] = $model ->orderBy('post_created_at', 'desc')
+								->findAll($limit);
+
+		return view('index', $data);
 	}
 
 	public function about()
@@ -16,7 +23,11 @@ class Home extends BaseController
 
 	public function tips()
 	{
+		if(isset($_SESSION['userSession'])) {
 		return view('tips');
+		} else {
+		return view('connection');
+		}
 	}
 
 	public function gallery()
@@ -28,6 +39,7 @@ class Home extends BaseController
 	{
 		return view('contact');
 	}
+	
 	
 
 }

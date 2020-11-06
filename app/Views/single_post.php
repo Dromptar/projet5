@@ -33,10 +33,10 @@
                         <div class="bd-pic">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <img src="./uploads/images/blog/<?= $singlePost['picture']?>">
+                                    <img src="/uploads/images/blog/<?= $singlePost['picture']?>">
                                 </div>
                                 <div class="col-lg-6">
-                                    <img src="/assets/img/blog/bd-2.jpg" alt="">
+                                    <img src="/assets/img/blog/commonBlog.jpg" alt="">
                                 </div>
                             </div>
                         </div>
@@ -47,9 +47,9 @@
                         </div>
                         <div class="bd-quote">
                             <samp>"</samp>
-                            <p>Quote</p>
+                            <p>Cita</p>
                             <div class="quote-author">
-                                <h5>quote author</h5>
+                                <h5>"La carga que se lleva en un grupo es una pluma"</h5>
                             </div>
                         </div>
                        
@@ -151,9 +151,14 @@
         </div>
     </section>
     <!-- Latest Blog Section End -->
-
-    <a href="/blog/deletePost/<?= $singlePost['post_id'] ?>" class="primary-btn">Delete</a>
-    <a href="/blog/editPost/<?= $singlePost['post_id'] ?>" class="primary-btn">Edit</a>
+    <?php
+    if (isset($_SESSION['admin']) && $_SESSION['admin'] == '1') {
+    ?>
+        <a href="/blog/deletePost/<?= $singlePost['post_id'] ?>" class="primary-btn">Delete</a>
+        <a href="/blog/editPost/<?= $singlePost['post_id'] ?>" class="primary-btn">Edit</a>
+    <?php
+    }
+    ?>
 
 
 <?php $content = ob_get_clean(); ?>

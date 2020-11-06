@@ -1,4 +1,4 @@
-<?php $title = 'Tips'; ?>
+<?php $title = 'Connectate'; ?>
    
 <?php ob_start(); ?>
 
@@ -8,10 +8,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="breadcrumb-text">
-                        <h2>Connection</h2>
+                        <h2>Connectate</h2>
                         <div class="breadcrumb-option">
                             <a href="/home"><i class="fa fa-home"></i> Home</a>
-                            <span>Class</span>
+                            <span>Connectate</span>
                         </div>
                     </div>
                 </div>

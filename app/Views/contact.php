@@ -1,4 +1,10 @@
-<?php $title = 'Contaco'; ?>
+<?php $title = 'Contaco';
+
+if (!isset($_SESSION)) {
+
+    session_start();
+}
+?>
    
 <?php ob_start(); ?>
 

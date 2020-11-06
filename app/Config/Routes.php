@@ -3,6 +3,11 @@
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
+if (!isset($_SESSION)) {
+
+    session_start();
+}
+
 // Load the system's routing file first, so that the app and ENVIRONMENT
 // can override as needed.
 if (file_exists(SYSTEMPATH . 'Config/Routes.php'))
@@ -33,6 +38,7 @@ $routes->setAutoRoute(true);
 //$routes->get('/', 'Home::index');
 $routes->add('home', 'Home::index');
 
+
 //paths for the menu
 $routes->add('about', 'Home::about');
 $routes->add('tips', 'Home::tips');
@@ -49,12 +55,12 @@ $routes->add('post', 'Blog::post');
 
 
 //paths for the logs
-$routes->add('adminLog', 'Logs::adminLog');
-$routes->add('adminSpace', 'Logs::adminSpace');
+$routes->add('adminSpace', 'Admin::adminSpace');
 $routes->add('registForm', 'Logs::registForm');
 $routes->add('register', 'Logs::register');
 $routes->add('connectForm', 'Logs::connectForm');
 $routes->add('connection', 'Logs::connection');
+
 
 
 

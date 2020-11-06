@@ -20,9 +20,11 @@
         </div>
     </section>
     <!-- Breadcrumb Section End -->
-
-
-    <a href="newPost">Creer un nuevo post</a>
+    <div class="col-lg-12">
+        <button type="submit"><a href="newPost">Creer un nuevo post</a></button>
+    </div>
+    
+    
 
     <!-- Blog Editor Section Start -->
 
