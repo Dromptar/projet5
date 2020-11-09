@@ -1,5 +1,5 @@
 <?php $title = 'New Post'; ?>
-   
+
 <?php ob_start(); ?>
 
     <!-- Breadcrumb Section Begin -->
@@ -61,6 +61,8 @@
 
 
 <?php $content = ob_get_clean(); ?>
+
+
 
 
 <?php require('template.php'); ?>

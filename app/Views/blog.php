@@ -24,6 +24,13 @@
     <!-- Blog Section Begin -->
     <section class="blog-section spad">
         <div class="container">
+        <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h2>Actividades recientes</h2>
+                    </div>
+                </div>
+        </div>
             <div class="row">
             <?php foreach($posts as $post) : ?>
                 <div class="col-lg-4 col-md-6">

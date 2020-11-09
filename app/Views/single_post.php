@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="bd-text">
-                        <div class="bd-title">
+                        <div class="section-title">
                             <h1><?= $singlePost['post_title'] ?></h1>
                         </div>
                         <div class="bd-pic">

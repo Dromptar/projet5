@@ -40,7 +40,7 @@
                         <p class="second-para">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
                             quam semper libero sit amet. Etiam rhoncus. Maecenas tempus, tellus eget condimentum
                             rhoncus, gravida quam semper libero sit amet.</p>
-                        <a href="#" class="primary-btn">Leer más</a>
+                        <a href="/about" class="primary-btn">Leer más</a>
                     </div>
                 </div>
             </div>

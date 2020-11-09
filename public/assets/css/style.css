@@ -36,7 +36,7 @@ html, body {
 	height: 100%;
 	font-family: "Poppins", sans-serif;
 	-webkit-font-smoothing: antialiased;
-	background-color: menu;
+	background-color: black;
 	font-smoothing: antialiased;
 }
 h1, h2, h3, h4, h5, h6 {
@@ -94,8 +94,8 @@ ul, ol {
 	text-align: center;
 	margin-bottom: 45px;
 }
-.section-title h2 {
-	color: #111111;
+.section-title h1, h2 {
+	color: rgb(237,233,215);
 	font-size: 40px;
 	font-weight: 600;
 	text-transform: uppercase;
@@ -123,7 +123,7 @@ ul, ol {
 	font-size: 16px;
 	font-weight: 600;
 	padding: 0 12px;
-	color: #ffffff;
+	color: rgb(237,233,215);
 	text-align: center;
 	width: 130px;
 	height: 46px;
@@ -259,8 +259,8 @@ ul, ol {
 	opacity: 1;
 }
 .nav-menu .mainmenu ul li a {
-	font-size: 16px;
-	color: #ffffff;
+	font-size: 18px;
+	color: rgb(237,233,215);
 	font-weight: 600;
 	padding: 28px 0;
 	position: relative;
@@ -309,13 +309,13 @@ ul, ol {
 }
 .hero-text h1 {
 	font-size: 50px;
-	color: #ffffff;
+	color: rgb(237,233,215);
 	font-weight: 600;
 	margin-top: 11px;
 	margin-bottom: 18px;
 }
 .hero-text p {
-	color: #ffffff;
+	color: rgb(237,233,215);
 	margin-bottom: 44px;
 }
 /*---------------------
@@ -327,8 +327,9 @@ ul, ol {
 }
 .about-pic img {
 	min-width: 100%;
-	border: 2px solid #313131;
-	box-shadow: 3px 3px #313131;
+	border: 2px hidden #9a9a9a;
+	box-shadow:8px 8px 10px 0 #9a9a9a;
+	border-radius: 50%;
 }
 .about-pic .play-btn {
 	position: absolute;
@@ -344,7 +345,7 @@ ul, ol {
 }
 .about-text h2 {
 	font-size: 40px;
-	color: #111111;
+	color: rgb(237,233,215);
 	text-transform: uppercase;
 	font-weight: 700;
 	margin-bottom: 25px;
@@ -414,7 +415,7 @@ ul, ol {
 }
 .services-item h4 {
 	font-size: 22px;
-	color: #ffffff;
+	color: rgb(237,233,215);
 	font-weight: 600;
 	margin-top: 36px;
 	margin-bottom: 20px;
@@ -501,7 +502,7 @@ ul, ol {
 	padding-bottom: 190px;
 }
 .trainer-section.about-trainer {
-	background: #ffffff;
+	background: #1e1e1e;
 }
 .single-trainer-item {
 	position: relative;
@@ -856,6 +857,7 @@ ul, ol {
 	text-transform: uppercase;
 	margin-bottom: 52px;
 }
+
 /*---------------------
   Footer Banner Section
 -----------------------*/
@@ -916,7 +918,7 @@ ul, ol {
 }
 .contact-option p {
 	font-size: 16px;
-	color: #ffffff;
+	color: rgb(237,233,215);
 	margin-top: 15px;
 }
 .subscribe-option {
@@ -930,15 +932,16 @@ ul, ol {
 	padding: 34px 0 26px;
 }
 .subscribe-option .so-text h4 {
-	color: #ffffff;
+	color: rgb(237,233,215);
 	font-weight: 600;
 	text-transform: uppercase;
 	margin-bottom: 6px;
+	text-shadow: 1px 1px black;
 }
 .subscribe-option .so-text p {
 	margin-bottom: 0;
 	font-size: 14px;
-	color: #ffffff;
+	color: rgb(237,233,215);
 }
 .subscribe-option .subscribe-form {
 	float: right;
@@ -956,7 +959,7 @@ ul, ol {
 }
 .subscribe-option .subscribe-form button {
 	font-size: 18px;
-	color: #ffffff;
+	color: rgb(237,233,215);
 	background: -webkit-gradient(linear, left top, right top, from(#eb3c5a), to(#f67831));
 	background: -o-linear-gradient(left, #eb3c5a, #f67831);
 	background: linear-gradient(to right, #eb3c5a, #f67831);
@@ -973,12 +976,12 @@ ul, ol {
 .copyright-text p {
 	padding-top: 6px;
 	float: left;
-	color: #ffffff;
+	color:rgb(237,233,215);
 	margin-right: 25px;
 	display: inline-block;
 }
 .copyright-text p a {
-	color: #ffffff;
+	color: rgb(237,233,215);
 }
 .copyright-text p a:hover {
 	color: #eb3c5a;
@@ -997,7 +1000,7 @@ ul, ol {
 	margin-right: 0;
 }
 .copyright-text ul li a {
-	color: #ffffff;
+	color: rgb(237,233,215);
 }
 .copyright-text ul li:last-child {
 	margin-right: 0;
@@ -1008,7 +1011,7 @@ ul, ol {
 .copyright-text .footer-social a {
 	display: inline-block;
 	font-size: 16px;
-	color: #ffffff;
+	color: rgb(237,233,215);
 	width: 40px;
 	height: 40px;
 	background: #282828;
@@ -1277,6 +1280,16 @@ ul, ol {
 	min-width: 100%;
 	margin-bottom: 30px;
 	border-radius: 50%;
+	 -webkit-transition: all 0.2s;
+     -moz-transition: all 0.2s;
+     -ms-transition: all 0.2s;
+     -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.single-blog-item:hover img{
+	filter: blur(2px);
+	border : 2px hidden #9a9a9a;
+    box-shadow: 8px 8px 10px 0 #9a9a9a;
 }
 .single-blog-item .blog-widget {
 	margin-bottom: 10px;
@@ -1295,6 +1308,24 @@ ul, ol {
 	color: #111111;
 	font-weight: 600;
 	line-height: 30px;
+}
+.post_item h3 {
+	position: absolute;
+	top: 45%;
+	width: 100%;
+    font-size: 1.5em;
+	z-index: 10;
+    display: none;
+}
+.post_item {
+	position: relative;
+}
+.post_item:hover h3{
+	display: block;
+}
+.post_item a {
+	color: white;
+	text-shadow: 1px 1px black;
 }
 /*----------------------------
   Blog Details Hero Section
@@ -1436,7 +1467,7 @@ ul, ol {
 }
 .bd-text .tag-share .social-share span {
 	font-size: 18px;
-	color: #111111;
+	color: rgb(237,233,215);
 	display: inline-block;
 }
 .bd-text .tag-share .social-share a {
@@ -1449,7 +1480,7 @@ ul, ol {
 	margin-bottom: 55px;
 }
 .bd-text .blog-author .ba-pic {
-	background: #f7f7f7;
+	background: black;
 	padding: 28px 0;
 	border-radius: 2px;
 	text-align: center;
@@ -1458,7 +1489,6 @@ ul, ol {
 	height: 144px;
 	width: 144px;
 	border-radius: 50%;
-	border: 10px solid #ffffff;
 }
 .bd-text .blog-author .ba-text {
 	padding-top: 35px;
