@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 
 <!-- Breadcrumb Section Begin -->
-<section class="breadcrumb-section set-bg" data-setbg="assets/img/robotitorz.jpeg" style="background-image: url(assets/img/robotitorz.jpeg);">
+<section class="breadcrumb-section set-bg" data-setbg="assets/img/videoPushUp.gif" style="background-image: url(assets/img/robotitorz.jpeg);">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -55,20 +55,7 @@
             <div class="col-lg-12">
                 <div class="about-counter-text">
                     <div class="single-counter">
-                        <h1 class="counter-num count">Entrenamiento personalizados</h1>
-                        <p>Programs</p>
-                    </div>
-                    <div class="single-counter">
-                        <h1 class="counter-num count">Ubicacion libre</h1>
-                        <p>Costanera...</p>
-                    </div>
-                    <div class="single-counter">
-                        <h1 class="counter-num count">Grupos pequenos</h1>
-                        <p>Members</p>
-                    </div>
-                    <div class="single-counter">
-                        <h1 class="counter-num count">Horarios flexibles</h1>
-                        <p>Horarios flexibles</p>
+                        <p>"No tengas miedo de ir más allá de tus limites, es asi que aprenderás a conocerlas."</p> 
                     </div>
                 </div>
             </div>

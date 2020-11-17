@@ -75,16 +75,16 @@ if (!isset($_SESSION)) {
                 <div class="col-lg-8">
                     <div class="contact-form">
                         <h4>Deja un comentario</h4>
-                        <form action="#">
+                        <form method="POST" action="mailto">
                             <div class="row">
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="Tu nombre">
+                                    <input type="text" placeholder="Tu nombre" name="username">
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="Tu Email">
+                                    <input type="text" placeholder="Tu Email" name="email">
                                 </div>
                                 <div class="col-lg-12">
-                                    <textarea placeholder="Tu mensaje"></textarea>
+                                    <textarea placeholder="Tu mensaje" name="message"></textarea>
                                     <button type="submit">Enviar mensaje</button>
                                 </div>
                             </div>

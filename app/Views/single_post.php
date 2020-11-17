@@ -5,7 +5,7 @@
   
 
     <!-- Blog Details Hero Section Begin -->
-    <section class="blog-details-hero set-bg" data-setbg="/assets/img/robotitorz.jpeg" style="background-image: url(/assets/img/robotitorz.jpeg);">
+    <section class="blog-details-hero set-bg" data-setbg="assets/img/robotitorz.jpeg" style="background-image: url(/assets/img/robotitorz.jpeg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -53,7 +53,7 @@
                             </div>
                         </div>
                        
-                        <div class="tag-share">
+                   <!-- <div class="tag-share">
                             <div class="tags">
                                 <a href="#">Camera</a>
                                 <a href="#">Photography</a>
@@ -65,7 +65,7 @@
                                 <a href="#"><i class="fa fa-instagram"></i></a>
                                 
                             </div>
-                        </div>
+                        </div> !-->
                         <div class="blog-author">
                             <div class="row">
                                 <div class="col-lg-3">
@@ -108,7 +108,7 @@
     </section>
     <!-- Blog Details Section End -->
 
-    <!-- Latest Blog Section Begin -->
+    <!-- Latest Blog Section Begin
     <section class="latest-blog-section recommend spad">
         <div class="container">
             <div class="row">
@@ -150,7 +150,7 @@
             </div>
         </div>
     </section>
-    <!-- Latest Blog Section End -->
+     Latest Blog Section End -->
     <?php
     if (isset($_SESSION['admin']) && $_SESSION['admin'] == '1') {
     ?>

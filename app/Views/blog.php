@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="/assets/img/robotitorz.jpeg" style="background-image: url(/assets/img/robotitorz.jpeg);">
+    <section class="breadcrumb-section set-bg" data-setbg="assets/img/robotitorz.jpeg"style="background-image: url(/assets/img/robotitorz.jpeg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">

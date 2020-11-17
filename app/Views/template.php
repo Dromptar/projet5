@@ -13,6 +13,7 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
         rel="stylesheet">
+        
 
  
 
@@ -36,7 +37,7 @@
         <div class="container">
             <div class="logo">
                 <a href="/home">
-                    <img src="/assets/img/BamLogoRZ.png" alt="">
+                    <img src="/assets/img/BamLogoRZ.png" alt="logo">
                 </a>
             </div>
             <div class="nav-menu">
@@ -132,6 +133,9 @@
     <script src="/assets/js/main.js"></script>
     <script src="https://cdn.tiny.cloud/1/m4l5idahpp956ut9d7c8qydikp11k175cpm5zbdholz40oc1/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="/assets/js/tinyMce.js"></script>
+    <script src="/assets/js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/75492b6bf6.js"></script>
+    <script src="/assets/js/requestAPI.js"></script>
     
 
 </body>

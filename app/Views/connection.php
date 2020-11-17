@@ -3,7 +3,7 @@
 <?php ob_start(); ?>
 
     <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="assets/img/robotitorz.jpeg" style="background-image: url(assets/img/robotitorz.jpeg);">
+    <section class="breadcrumb-section set-bg" data-setbg="assets/img/robotitorz.jpeg"style="background-image: url(assets/img/robotitorz.jpeg);">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -27,6 +27,11 @@
                 <div class="row">
                     <div class="col-lg-8">
                         <div class="register-text">
+                        <?php if (isset($_SESSION['success_register'])) {
+                            echo '<h3>' . $_SESSION['success_register'] .'</h3>';
+                        }
+                        unset($_SESSION['success_register']);
+                        ?>
                             <div class="section-title">
                                 <h2>Ingreso!</h2>
                             </div>
@@ -35,6 +40,11 @@
                                     <div class="col-lg-6">
                                         <label for="name">Pseudo</label>
                                         <input type="text" id="name" name="username">
+                                        <?php if (isset($_SESSION['user_pass_error'])) {
+                                            echo '<p>' . $_SESSION['user_pass_error'] . '</p>';
+                                        }
+                                        unset($_SESSION['user_pass_error']);
+                                        ?>
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="last-name">Contrasena</label>

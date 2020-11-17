@@ -36,6 +36,21 @@
                                     <div class="col-lg-6">
                                         <label for="name">Nombre</label>
                                         <input type="text" id="name" name="username">
+                                    <?php if (isset($_SESSION['user_mail_used_error'])) {
+                                        echo '<p>' . $_SESSION['user_mail_used_error'] . '</p>';
+                                    }
+                                    unset($_SESSION['user_mail_used_error']);
+                                    ?>
+                                    <?php if (isset($_SESSION['pass_match_error'])) {
+                                        echo '<p>' . $_SESSION['pass_match_error'] . '</p>';
+                                    }
+                                    unset($_SESSION['pass_match_error']);
+                                    ?>
+                                    <?php if (isset($_SESSION['all_fields_error'])) {
+                                        echo '<p>' . $_SESSION['all_fields_error'] . '</p>';
+                                    }
+                                    unset($_SESSION['all_fields_error']); 
+                                    ?>   
                                     </div>
                                     <div class="col-lg-6">
                                         <label for="email">E-mail</label>

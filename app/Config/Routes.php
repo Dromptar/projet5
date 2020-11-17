@@ -50,7 +50,6 @@ $routes->add('contact', 'Home::contact');
 $routes->group('blog', function($routes) {
 	$routes->add('post/(:num)', 'Blog::blogPost/$1');
 });
-$routes->add('newPost', 'Blog::newPost');
 $routes->add('post', 'Blog::post');
 
 
@@ -60,6 +59,12 @@ $routes->add('registForm', 'Logs::registForm');
 $routes->add('register', 'Logs::register');
 $routes->add('connectForm', 'Logs::connectForm');
 $routes->add('connection', 'Logs::connection');
+
+//paths for admin gestion
+$routes->add('newPost', 'Blog::newPost');
+$routes->add('mailto', 'Admin::mailto');
+
+
 
 
 

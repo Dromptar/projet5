@@ -39,7 +39,7 @@ class Logs extends BaseController
             die();
             */
             if ($notAvailable) {
-                echo "<script>alert(\"'Pseudonyme et/ou email déjà utilisé.\")</script>";
+                $_SESSION['user_mail_used_error'] = "* Este nombre o este mail ya esta registrado."; 
                 return view('register');
             }
 
@@ -56,13 +56,17 @@ class Logs extends BaseController
                 $user->email = $_POST['email'];
                 $model->save($user);
 
+                $_SESSION['success_register'] = "Ya estas registrado!";
+                
+                return view('connection');
+
                 // go to a success page
             } else {
-                echo "<script>alert(\"Les mots de passes ne correspondent pas et/ou l\'adresse mail n\'est pas valide.\")</script>";
+                $_SESSION['pass_match_error'] = "* Las contrasenas no son iguales o el mail no es valido.";
                 return view('register');
             }
         } else {
-            echo "<script>alert(\"Veuillez remplir tous les champs.\")</script>";
+            $_SESSION['all_fields_error'] = "* Por favor rellena todos los campos.";
             return view('register');
         }
     }
@@ -82,7 +86,8 @@ class Logs extends BaseController
             
             if (!$userName OR !password_verify($_POST['pass'], $userName->pass)) {
 
-                echo "<script>alert(\"Nombre o contraseña incorrecta.\")</script>";
+                $_SESSION['user_pass_error'] = "* Nombre o contraseña incorrecta.";
+                /*echo "<script>alert(\"Nombre o contraseña incorrecta.\")</script>";*/
                 return view('connection');
     
             }else if ($userName->is_admin) {

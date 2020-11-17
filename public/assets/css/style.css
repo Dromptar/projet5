@@ -237,6 +237,9 @@ ul, ol {
 .logo {
 	float: left;
 }
+.logo img {
+	height: 100px;
+}
 .logo a {
 	display: inline-block;
 	/*padding: 24px 0 29px;*/
@@ -245,7 +248,7 @@ ul, ol {
 	float: right;
 	display: block;
 	position: relative;
-	top: 20px;
+	top: 10px;
 }
 .nav-menu .mainmenu {
 	display: inline-block;
@@ -351,7 +354,7 @@ ul, ol {
 	margin-bottom: 25px;
 }
 .about-text p {
-	color: #6b6b6b;
+	color:#bdbdbd;
 }
 .about-text p.first-para {
 	margin-bottom: 10px;
@@ -785,7 +788,7 @@ ul, ol {
 	margin-top: -135px;
 }
 .register-section.classes-page {
-	background: #ffffff;
+	background:black;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	margin-top: 0;
@@ -802,8 +805,9 @@ ul, ol {
 }
 .register-text {
 	padding: 50px 70px 60px 70px;
-	background: #ffffff;
+	background: #1e1e1e;
 	margin-right: -15px;
+	height: 100%;
 }
 .register-text .register-form label {
 	font-size: 14px;
@@ -836,7 +840,7 @@ ul, ol {
 	margin-left: -15px;
 }
 .register-pic img {
-	/*height: 502px;*/
+	height: 502px;
 }
 /*---------------------
   Latest BLog Section
@@ -1034,18 +1038,18 @@ ul, ol {
 
 .breadcrumb-section {
 	padding-top: 190px;
-	height: 400px;
+	height: 460px;
 }
 .breadcrumb-text {
 	text-align: center;
 }
 .breadcrumb-text h2 {
 	font-size: 60px;
-	color: black;
+	color: #f15d44;
 	font-weight: 600;
 	text-transform: uppercase;
 	margin-bottom: 10px;
-	text-shadow: 2px 2px white;
+	text-shadow: 2px 2px black;
 }
 .breadcrumb-text .breadcrumb-option a {
 	font-size: 16px;
@@ -1186,7 +1190,12 @@ ul, ol {
 /*---------------------
   About Counter
 -----------------------*/
-
+.about-counter {
+	margin-bottom: 80px;
+}
+.about-counter .container{
+	width: 70%;
+}
 .about-counter-text {
 	background: -webkit-gradient(linear, left top, right top, from(#eb3c5a), to(#f67831));
 	background: -o-linear-gradient(left, #eb3c5a, #f67831);
@@ -1277,6 +1286,10 @@ ul, ol {
 	margin-bottom: 42px;
 }
 .single-blog-item img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
 	min-width: 100%;
 	margin-bottom: 30px;
 	border-radius: 50%;
@@ -1284,12 +1297,20 @@ ul, ol {
      -moz-transition: all 0.2s;
      -ms-transition: all 0.2s;
      -o-transition: all 0.2s;
-    transition: all 0.2s;
+	transition: all 0.2s;
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	
 }
 .single-blog-item:hover img{
-	filter: blur(2px);
 	border : 2px hidden #9a9a9a;
-    box-shadow: 8px 8px 10px 0 #9a9a9a;
+	box-shadow: 6px 6px 8px 0 #9a9a9a;
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-filter: grayscale(0);
+	filter: grayscale(0);
 }
 .single-blog-item .blog-widget {
 	margin-bottom: 10px;
@@ -1310,8 +1331,9 @@ ul, ol {
 	line-height: 30px;
 }
 .post_item h3 {
+	color: #f15d44;
 	position: absolute;
-	top: 45%;
+	top: 100%;
 	width: 100%;
     font-size: 1.5em;
 	z-index: 10;
@@ -1377,6 +1399,7 @@ ul, ol {
 }
 .bd-text .bd-more-text {
 	margin-bottom: 52px;
+	color: #bdbdbd;
 }
 .bd-text .bd-more-text .bm-item h4 {
 	font-weight: 600;
@@ -1405,14 +1428,14 @@ ul, ol {
 	left: 45px;
 	top: 35px;
 	font-size: 89px;
-	color: #ffffff;
+	color: rgb(237,233,215);
 	opacity: 0.1;
 	line-height: 68px;
 	z-index: -1;
 }
 .bd-text .bd-quote p {
 	font-size: 24px;
-	color: #ffffff;
+	color: rgb(237,233,215);
 	line-height: 36px;
 	margin-bottom: 23px;
 }
@@ -1422,7 +1445,7 @@ ul, ol {
 }
 .bd-text .bd-quote .quote-author span {
 	font-size: 14px;
-	color: #ffffff;
+	color: rgb(237,233,215);
 }
 .bd-text .bd-last-para {
 	margin-bottom: 55px;
@@ -1494,7 +1517,7 @@ ul, ol {
 	padding-top: 35px;
 }
 .bd-text .blog-author .ba-text h5 {
-	color: #111111;
+	color: #bdbdbd;
 	font-weight: 600;
 	font-size: 20px;
 	margin-bottom: 12px;
@@ -1506,11 +1529,15 @@ ul, ol {
 .bd-text .blog-author .ba-text .bt-social a {
 	display: inline-block;
 	font-size: 14px;
-	color: #111111;
+	color: #bdbdbd;
 	margin-right: 25px;
 }
+.leave-comment {
+	background: #1e1e1e;
+	padding: 20px;
+}
 .bd-text .leave-comment h3 {
-	color: #111111;
+	color: rgb(237,233,215);
 	font-weight: 600;
 	margin-bottom: 32px;
 }
@@ -1573,10 +1600,13 @@ ul, ol {
 /*---------------------
   Contact Section
 -----------------------*/
-
+.contact-section .container {
+	background:#1e1e1e ;
+	padding: 20px;
+}
 .contact-info h4 {
 	font-weight: 600;
-	color: #111111;
+	color: #bdbdbd;
 	text-transform: uppercase;
 	margin-bottom: 47px;
 }
@@ -1603,12 +1633,12 @@ ul, ol {
 }
 .contact-info .contact-address .ca-widget .cw-text p {
 	margin-bottom: 0;
-	color: #111111;
+	color: #bdbdbd;
 	font-size: 18px;
 }
 .contact-form h4 {
 	font-weight: 600;
-	color: #111111;
+	color: #bdbdbd;
 	text-transform: uppercase;
 	margin-bottom: 47px;
 }
@@ -1677,6 +1707,28 @@ ul, ol {
 	border: none;
 	text-transform: uppercase;
 }
+
+/*---------------------
+  Admin Section
+-----------------------*/
+.admin-space{
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.admin-space .container {
+	background:#1e1e1e ;
+	padding: 20px;
+	width: 70%;
+}
+.admin-space .container h4{
+	text-align: center;
+}
+.admin-space .contact-address{
+	display: flex;
+	justify-content: center;
+}
+
+
 /*-------------------------------- Respinsive Media Styles --------------------------------*/
 
 @media only screen and (min-width: 1200px) {

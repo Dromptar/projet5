@@ -20,9 +20,38 @@
         </div>
     </section>
     <!-- Breadcrumb Section End -->
-    <div class="col-lg-12">
-        <button type="submit"><a href="newPost">Creer un nuevo post</a></button>
-    </div>
+   
+    <section class="admin-space">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-info">
+                        <h4>Mi espacio administrador</h4>
+                        <div class="contact-address">
+                            <div class="ca-widget">
+                                <div class="cw-icon">
+                                <a href="newPost">
+                                    <i class="fas fa-pen"></i>
+                                </a>
+                                </div>
+                            </div>
+                            <div class="ca-widget">
+                                <div class="cw-icon">
+                                    <i class="fas fa-users"></i>
+                                </div>
+                            </div>
+                            <div class="ca-widget">
+                                <div class="cw-icon">
+                                    <i class="fas fa-comments"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
     
     
 

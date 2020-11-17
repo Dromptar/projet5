@@ -2,6 +2,7 @@
    
 <?php ob_start(); ?>
 
+
     <!-- Hero Section Begin -->
     <section class="hero-section set-bg" data-setbg="assets/img/parana/berducB&W.jpeg" style="background-image: url(assets/img/parana/berducB&W.jpeg);">
         <div class="container">
