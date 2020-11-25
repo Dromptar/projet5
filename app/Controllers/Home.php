@@ -30,6 +30,15 @@ class Home extends BaseController
 		}
 	}
 
+	public function recipeSearch()
+	{
+		if(isset($_SESSION['userSession'])) {
+		return view('recipe_search');
+		} else {
+		return view('connection');
+		}
+	}
+
 	public function gallery()
 	{
 		return view('gallery');
@@ -39,7 +48,7 @@ class Home extends BaseController
 	{
 		return view('contact');
 	}
-	
+
 	
 
 }

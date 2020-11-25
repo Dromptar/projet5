@@ -1,6 +1,7 @@
 <?php
 namespace App\Controllers;
 
+
 /**
  * Class BaseController
  *
@@ -15,6 +16,7 @@ namespace App\Controllers;
  */
 
 use CodeIgniter\Controller;
+
 
 class BaseController extends Controller
 {

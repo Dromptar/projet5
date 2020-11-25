@@ -17,10 +17,15 @@ class Admin extends BaseController
 
     public function mailto() {
 
-        $mail = mail($_POST['email'], 'Envoi depuis la page Contact', $_POST['message'], 'From : webmaster@monsite.fr');
-        if ($mail) {
-        echo '<p>Votre message a bien été envoyé.</p>';
-        }
+        $this->load->library('email');
+
+        $this->email->from($_POST['email'], 'Your Name');
+        $this->email->to('simon.morvant@yahoo.com');
+        
+        $this->email->subject('Email Test');
+        $this->email->message($_POST['message']);
+
+        $this->email->send();
     }
 
 }

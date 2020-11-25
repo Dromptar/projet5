@@ -135,7 +135,7 @@
     <script src="/assets/js/tinyMce.js"></script>
     <script src="/assets/js/menu.js"></script>
     <script src="https://kit.fontawesome.com/75492b6bf6.js"></script>
-    <script src="/assets/js/requestAPI.js"></script>
+    
     
 
 </body>

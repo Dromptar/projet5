@@ -1,5 +1,7 @@
 <?php namespace Config;
 
+header('Access-Control-Allow-Origin: *');
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -27,6 +29,8 @@ $routes->setTranslateURIDashes(false);
 $routes->set404Override();
 $routes->setAutoRoute(true);
 
+$routes->options('(:any)', 'BaseController::options');
+
 /**
  * --------------------------------------------------------------------
  * Route Definitions
@@ -38,10 +42,10 @@ $routes->setAutoRoute(true);
 //$routes->get('/', 'Home::index');
 $routes->add('home', 'Home::index');
 
-
 //paths for the menu
 $routes->add('about', 'Home::about');
 $routes->add('tips', 'Home::tips');
+$routes->add('recipeSearch', 'Home::recipeSearch');
 $routes->add('blog', 'Blog::index');
 $routes->add('gallery', 'Home::gallery');
 $routes->add('contact', 'Home::contact');

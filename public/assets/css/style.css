@@ -1723,10 +1723,64 @@ ul, ol {
 .admin-space .container h4{
 	text-align: center;
 }
-.admin-space .contact-address{
+
+.admin-space .contact-address {
 	display: flex;
 	justify-content: center;
 }
+.admin-space .contact-info .contact-address .ca-widget {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.admin-space .contact-info .contact-address .ca-widget:hover{
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.admin-space .contact-info .contact-address .ca-widget .cw-icon a{
+	color: #f15d44;
+}
+.admin-space .contact-info .contact-address .ca-widget .cw-icon {
+	font-size: 2rem;
+	color: #f15d44;
+	height: 100px;
+	width: 100px;
+	line-height: 95px;
+}
+.admin-space .contact-info .contact-address .ca-widget .cw-icon a:visited {
+	color: #f15d44;
+}
+
+
+/*---------------------
+  Recipe APi Section
+-----------------------*/
+
+#searchResult{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.card {
+	margin: 50px;
+	background-color: rgb(237,233,215);
+}
+.card .btn-primary{
+	background-color: #f15d44;
+	border: 1px solid #f15d44;;
+}
+.card{
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.card:hover {
+	-webkit-transform: scale(1.2);
+	transform: scale(1.2);
+}
+
 
 
 /*-------------------------------- Respinsive Media Styles --------------------------------*/

@@ -12,7 +12,7 @@
                         <span>FITNESS ELEMENTS</span>
                         <h1>Recipe Search and Diet</h1>
                         <p>Edamam Recipe Search and Diet te permite encontrar <br />recetas para mejorar tu alimentacion</p>
-                        <a href="#" class="primary-btn">Leer más</a>
+                        <a href="/recipeSearch" class="primary-btn">Leer más</a>
                     </div>
                 </div>
             </div>
