@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="zxx">
 
@@ -11,11 +10,10 @@
     <title><?= $title ?></title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap"
-        rel="stylesheet">
-        
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
 
- 
+
+
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css" type="text/css">
@@ -47,22 +45,26 @@
                         <li><a href="/about">La propuesta</a></li>
                         <li><a href="/blog">Actividades</a></li>
                         <li><a href="/tips">Truquitos</a></li>
-                        <!-- <li><a href="/gallery">Galeria</a></li> !-->
+                        <?php if (isset($_SESSION['userSession'])) {
+                        ?>
+                            <li><a href="/recipeSearch">Mis Recetas</a></li>
+                        <?php
+                        }
+                        ?>
                         <li><a href="/contact">Contacto</a></li>
                     </ul>
                 </nav>
-                <?php if (isset($_SESSION['userSession']) && $_SESSION['admin'] == 0)
-                {
+                <?php if (isset($_SESSION['userSession']) && $_SESSION['admin'] == 0) {
                 ?>
-                    <a href="/connectForm" class="primary-btn signup-btn"><?= $_SESSION['userSession']?></a>
+                    <a href="/connectForm" class="primary-btn signup-btn"><?= $_SESSION['userSession'] ?></a>
                     <a href="/Logs/disconnection" class="primary-btn signup-btn">Desconectar</a>
                 <?php
-                } elseif(isset($_SESSION['admin']) && $_SESSION['admin'] == '1') {
+                } elseif (isset($_SESSION['admin']) && $_SESSION['admin'] == '1') {
                 ?>
-                    <a href="/adminSpace" class="primary-btn signup-btn"><?= $_SESSION['userSession']?></a>
+                    <a href="/adminSpace" class="primary-btn signup-btn"><?= $_SESSION['userSession'] ?></a>
                     <a href="/Logs/disconnection" class="primary-btn signup-btn">Desconectar</a>
                 <?php
-                }else {
+                } else {
                 ?>
                     <a href="/registForm" class="primary-btn signup-btn">Empeza Hoy</a>
                     <a href="/connectForm" class="primary-btn signup-btn">Mi cuenta</a>
@@ -96,28 +98,32 @@
                         <p>morvant.simon@gmail.com</p>
                     </div>
                 </div>
+
                 <div class="footer-social">
                     <a href="https://www.instagram.com/simonmrvt/?hl=fr">Seguime en Instagram <i class="fa fa-instagram"></i></a>
                 </div>
-                
+
+
             </div>
             <div class="subscribe-option set-bg" data-setbg="/assets/img/para_bannerCut.jpeg">
                 <div class="so-text">
                     <h4>Bouge Avec Moi</h4>
                 </div>
-                <!--<form action="#" class="subscribe-form">
-                    <input type="text" placeholder="Enter Your Mail">
-                    <button type="submit"><i class="fa fa-send"></i></button>
-                </form>-->
+
             </div>
             <div class="copyright-text">
                 <ul>
                     <li><a href="#">Term&Use</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                 </ul>
-                <p>&copy;<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-  <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p></p>
+                <p>&copy;<p>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;<script>
+                            document.write(new Date().getFullYear());
+                        </script> All rights reserved | This template is made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </p>
             </div>
         </div>
     </footer>
@@ -134,9 +140,11 @@
     <script src="https://cdn.tiny.cloud/1/m4l5idahpp956ut9d7c8qydikp11k175cpm5zbdholz40oc1/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="/assets/js/tinyMce.js"></script>
     <script src="/assets/js/menu.js"></script>
+    <script src="/assets/js/sweetAlert.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.2/sweetalert2.all.js"></script> 
     <script src="https://kit.fontawesome.com/75492b6bf6.js"></script>
-    
-    
+
+
 
 </body>
 

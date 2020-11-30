@@ -1,4 +1,4 @@
-<?php $title = 'Contaco';
+<?php $title = 'Contacto';
 
 if (!isset($_SESSION)) {
 

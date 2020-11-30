@@ -2,53 +2,99 @@
 
 <?php ob_start(); ?>
 
-    <!-- Breadcrumb Section Begin -->
-    <section class="breadcrumb-section set-bg" data-setbg="assets/img/robotitorz.jpeg"style="background-image: url(assets/img/robotitorz.jpeg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="breadcrumb-text">
-                        <h2>Truquitos</h2>
-                        <div class="breadcrumb-option">
-                            <a href="/home"><i class="fa fa-home"></i> Home</a>
-                            <span>Class</span>
-                        </div>
+<!-- Breadcrumb Section Begin -->
+<section class="breadcrumb-section set-bg" data-setbg="assets/img/robotitorz.jpeg" style="background-image: url(assets/img/robotitorz.jpeg);">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-text">
+                    <h2>Truquitos</h2>
+                    <div class="breadcrumb-option">
+                        <a href="/home"><i class="fa fa-home"></i> Home</a>
+                        <span>Class</span>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Breadcrumb Section End -->
+    </div>
+</section>
+<!-- Breadcrumb Section End -->
 
-    <section class="about-section about-page spad">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="about-pic">
-                        <img src="assets/img/truquito.jpg" alt="">
-                        <!--<a href="https://www.youtube.com/watch?v=SlPhMPnQ58k" class="play-btn video-popup">
-                            <img src="img/play.png" alt="">
-                        </a>-->
-                    </div>
+
+<div id="tips-title">
+    <div class="section-title">
+        <h2>Bienvenido a los "truquitos" del Coach, <?= $_SESSION['userSession'] ?>!</h2>>
+    </div>    
+</div>
+
+
+<section class="article1-section article1-page spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="article1-pic">
+                    <img src="assets/img/truquito.jpg" alt="">
                 </div>
-                <div class="col-lg-6">
-                    <div class="about-text">
-                        <h2>Bienvenido a los "truquitos" del Coach <?= $_SESSION['userSession']?>!</h2>
-                        <p class="first-para">Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
-                            sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate
-                            cursus a amet.</p>
-                        <p class="second-para">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
-                            quam semper libero sit amet.</p>
-                        <img src="img/about-signature.png" alt="">
-                    </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="article1-text">
+                    <p class="first-para">Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
+                        sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate
+                        cursus a amet.</p>
+                    <p class="second-para">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
+                        quam semper libero sit amet.</p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <video src="assets/img/rutinaBrazos.mp4" controls></video>
 
-    
+<section class="article2-section article2-page spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="article2-pic">
+                    <video src="assets/img/videos/rutinaBrazos.mp4" controls></video>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="article2-text">
+                    <p class="first-para">Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
+                        sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate
+                        cursus a amet.</p>
+                    <p class="second-para">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
+                        quam semper libero sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="article1-section article1-page spad">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-5">
+                <div class="article1-pic">
+                    <video src="assets/img/videos/rutinaAbdos.mp4" controls></video>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="article1-text">
+                    <p class="first-para">Lorem ipsum proin gravida nibh vel velit auctor aliquet. Aenean pretium
+                        sollicitudin, nascetur auci elit consequat ipsutissem niuis sed odio sit amet nibh vulputate
+                        cursus a amet.</p>
+                    <p class="second-para">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, gravida
+                        quam semper libero sit amet.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
 <?php $content = ob_get_clean(); ?>
 
 

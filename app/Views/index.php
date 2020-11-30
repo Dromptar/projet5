@@ -8,11 +8,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="hero-text">
-                        <span>FITNESS ELEMENTS</span>
-                        <h1>Recipe Search and Diet</h1>
-                        <p>Edamam Recipe Search and Diet te permite encontrar <br />recetas para mejorar tu alimentacion</p>
-                        <a href="/recipeSearch" class="primary-btn">Leer más</a>
+                    <div id="site-title">
+                        <h1>Bouge Avec Moi</h1> 
                     </div>
                 </div>
             </div>
@@ -70,7 +67,7 @@
                                 </div>
                                 <div class="services-item bg-gray pd-b">
                                     <img src="assets/img/services/service-icon-3.png" alt="">
-                                    <h4>Tonifica</h4>
+                                    <h4>Saludable</h4>
                                     <p>Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part urient
                                         montes.</p>
                                 </div>
@@ -84,7 +81,7 @@
                                 </div>
                                 <div class="services-item pd-b">
                                     <img src="assets/img/services/service-icon-4.png" alt="">
-                                    <h4>Quema calorias</h4>
+                                    <h4>Resultados</h4>
                                     <p>Aenean massa. Cum sociis Theme et natoque penatibus et magnis dis part urient
                                         montes.</p>
                                 </div>

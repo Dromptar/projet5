@@ -102,7 +102,6 @@ class Logs extends BaseController
 
             } else {
 
-                echo "<script>alert(\"Bienvenido en tu espacio!\")</script>";
 
                 $userId = $userName->user_id;
                 $isAdmin = $userName->is_admin;

@@ -51,8 +51,11 @@
                                         <input type="password" id="last-name" name="pass">
                                     </div>
                                 </div>
-                                <button type="submit" class="register-btn">A Entrenar</button>
+                                <button onclick="validation();" type="submit" class="register-btn">A Entrenar</button>
                             </form>
+                            <p>
+                                <a href="/registForm">No tenes cuenta? Registrate hoy!</a>
+                            </p>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -68,6 +71,7 @@
 
     
 <?php $content = ob_get_clean(); ?>
+
 
 
 <?php require('template.php'); ?>

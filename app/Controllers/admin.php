@@ -17,15 +17,27 @@ class Admin extends BaseController
 
     public function mailto() {
 
-        $this->load->library('email');
+        $email = \Config\Services::email();
 
-        $this->email->from($_POST['email'], 'Your Name');
-        $this->email->to('simon.morvant@yahoo.com');
-        
-        $this->email->subject('Email Test');
-        $this->email->message($_POST['message']);
+        $email->setFrom('visitor@mail.com', 'Your Name');
+        $email->setTo('simon.morvant@yahoo.com');
+        //$email->setCC('another@another-example.com');
+        //$email->setBCC('them@their-example.com');
 
-        $this->email->send();
+        $email->setSubject('Email Test');
+        $email->setMessage('Testing the email class.');
+
+        $email->send();
+
+
+        if ($email->send()) {
+            //echo 'Correo enviado';
+            return view('contact');
+
+        } else {
+            echo 'Correo no enviado';
+        }
+           
     }
 
 }
