@@ -12,7 +12,7 @@ class Home extends BaseController
 		$data['posts'] = $model ->orderBy('post_created_at', 'desc')
 								->findAll($limit);
 
-		return view('index', $data);
+		return view('home', $data);
 	}
 
 	public function about()

@@ -22,6 +22,12 @@
     <link rel="stylesheet" href="/assets/css/magnific-popup.css" type="text/css">
     <link rel="stylesheet" href="/assets/css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css">
+
+    <?php 
+        echo '<input type="hidden" id="apiId" name="apiId" value="'.getenv('EDAMAM_API_ID').'">';
+        echo '<input type="hidden" id="apiKey" name="apiKey" value="'.getenv('EDAMAM_API_KEY').'">';
+    ?>
+  
 </head>
 
 <body>
@@ -140,7 +146,6 @@
     <script src="https://cdn.tiny.cloud/1/m4l5idahpp956ut9d7c8qydikp11k175cpm5zbdholz40oc1/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
     <script src="/assets/js/tinyMce.js"></script>
     <script src="/assets/js/menu.js"></script>
-    <script src="/assets/js/sweetAlert.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.29.2/sweetalert2.all.js"></script> 
     <script src="https://kit.fontawesome.com/75492b6bf6.js"></script>
 

@@ -94,6 +94,7 @@
 </section>
 
 
+<script src="/assets/js/sweetAlert.js"></script>
 
 <?php $content = ob_get_clean(); ?>
 

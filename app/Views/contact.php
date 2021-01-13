@@ -81,7 +81,7 @@ if (!isset($_SESSION)) {
                                     <input type="text" placeholder="Tu nombre" name="username">
                                 </div>
                                 <div class="col-lg-6">
-                                    <input type="text" placeholder="Tu Email" name="email">
+                                    <input type="text" placeholder="Tu Email" name="usermail">
                                 </div>
                                 <div class="col-lg-12">
                                     <textarea placeholder="Tu mensaje" name="message"></textarea>

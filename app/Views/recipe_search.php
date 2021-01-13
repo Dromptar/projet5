@@ -21,7 +21,7 @@
     <!-- Breadcrumb Section End -->
 
     <!-- Register Section Begin -->
-    <section class="register-section classes-page spad">
+    <section id="recipe-search-section">
         <div class="container">
             <div class="classes-page-text">
                 <div class="row">
@@ -33,12 +33,13 @@
                             </div>
                             <div class="register-form">
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-12">
                                         <label for="receta"></label>
                                         <input type="text" id="recipeName" placeholder="Busca tu receta" name="receta">
                                     </div>
                                 </div>
-                                <button id="search" type="submit" class="register-btn">Buscar</button>
+                                <button id="search" type="submit" class="register-btn">Buscar</button> 
+                                <div id="emptyInput"></div>
                             </div>
                         </div>
                     </div>

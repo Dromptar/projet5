@@ -51,7 +51,7 @@
                                         <input type="password" id="last-name" name="pass">
                                     </div>
                                 </div>
-                                <button onclick="validation();" type="submit" class="register-btn">A Entrenar</button>
+                                <button  type="submit" class="register-btn">A Entrenar</button>
                             </form>
                             <p>
                                 <a href="/registForm">No tenes cuenta? Registrate hoy!</a>

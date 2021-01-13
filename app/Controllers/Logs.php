@@ -9,7 +9,7 @@ class Logs extends BaseController
 
     public function index()
     {
-        return view('index');
+        return view('home');
     }
 
     public function registForm()
@@ -59,8 +59,7 @@ class Logs extends BaseController
                 $_SESSION['success_register'] = "Ya estas registrado!";
                 
                 return view('connection');
-
-                // go to a success page
+                
             } else {
                 $_SESSION['pass_match_error'] = "* Las contrasenas no son iguales o el mail no es valido.";
                 return view('register');
@@ -110,6 +109,7 @@ class Logs extends BaseController
                 $_SESSION['userSession'] = $_POST['username'];
                 
                 return view('tips');
+                
             }
         }
     }

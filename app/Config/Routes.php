@@ -39,7 +39,7 @@ $routes->options('(:any)', 'BaseController::options');
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-//$routes->get('/', 'Home::index');
+$routes->get('/', 'Home::index');
 $routes->add('home', 'Home::index');
 
 //paths for the menu
@@ -59,6 +59,7 @@ $routes->add('post', 'Blog::post');
 
 //paths for the logs
 $routes->add('adminSpace', 'Admin::adminSpace');
+$routes->add('membersList', 'Admin::membersList');
 $routes->add('registForm', 'Logs::registForm');
 $routes->add('register', 'Logs::register');
 $routes->add('connectForm', 'Logs::connectForm');

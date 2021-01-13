@@ -20,7 +20,7 @@
     </section>
     <!-- Breadcrumb Section End -->
 
-    <section class="register-section classes-page spad">
+    <section id="create-new-post">
         <div class="container">
             <div class="classes-page-text">
                 <div class="row">
@@ -45,7 +45,7 @@
                                         <label for="name">Image</label>
                                         <input type="file" accept="image/*" name="picture">
                                     </div>  
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-12">
                                         <label for="name">Contenido</label>
                                         <textarea id="editor" name="post_content"></textarea>
                                     </div> 

@@ -65,7 +65,7 @@
                                         <input type="password" id="last-name" name="pass_confirmed">
                                     </div>
                                 </div>
-                                <button type="submit" class="register-btn">A Entrenar</button>
+                                <button onclick="registerValid()" type="submit" class="register-btn">A Entrenar</button>
                             </form>
                         </div>
                     </div>

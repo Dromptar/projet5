@@ -65,13 +65,16 @@
                                 <div class="ba-text">
                                     <h5> <?= $singlePost['author'] ?></h5>
                                     <div class="bt-social">
-                                        <a href="#"><i class="fa fa-facebook"></i></a>
-                                        <a href="#"><i class="fa fa-instagram"></i></a>
+                                        <a href="https://www.facebook.com/simon.morvant"><i class="fa fa-facebook"></i></a>
+                                        <a href="https://www.instagram.com/simonmrvt/?hl=fr"><i class="fa fa-instagram"></i></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- section coments to dvelopp 
+
                     <div class="leave-comment">
                         <h3>Leave A Comment</h3>
                         <form action="#">
@@ -89,6 +92,7 @@
                             </div>
                         </form>
                     </div>
+                    !-->
                 </div>
             </div>
         </div>
